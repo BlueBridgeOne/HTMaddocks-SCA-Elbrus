@@ -1,0 +1,163 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.facets-item-cell-list {
+	@extend .row;
+	@extend .item-cell;
+	border: 1px solid $sc-color-theme-border;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+	.cart-add-to-cart-button-container {
+		padding-left:0px;
+	}
+
+	.cart-quickaddtocart-price {
+		margin-bottom:$sc-small-margin;
+	}
+
+	.product-line-stock {
+		clear:both;
+	}
+}
+
+.facets-item-cell-list-quick-view-wrapper {
+	@extend .item-cell-quick-view-wrapper;
+}
+
+.facets-item-cell-list-quick-view-link {
+	@extend .item-cell-quick-view-link;
+}
+
+.facets-item-cell-list-left {
+	@extend .col-xs-3;
+	padding-left: 0px;
+	padding-right:0px;
+}
+
+.facets-item-cell-list-right {
+	@extend .col-xs-9;
+	padding-left: $sc-base-padding;
+	padding-right: 0px;
+
+	.item-views-price {
+		text-align:left;
+	}
+}
+
+.facets-item-cell-list-image-wrapper {
+	position:relative;
+	text-align:center;
+}
+
+.facets-item-cell-list-stock-message {
+	text-align:left;
+}
+
+.facets-item-cell-list-anchor {}
+
+.facets-item-cell-list-quick-view-icon {}
+
+.facets-item-cell-list-name {}
+
+.facets-item-cell-list-add-to-cart {}
+
+.facets-item-cell-list-add-to-cart-itemid {}
+
+.facets-item-cell-list-add-to-cart-quantity {}
+
+.facets-item-cell-list-add-to-cart-button {}
+
+.facets-item-cell-list-stock {
+	.product-line-stock-msg-in,
+	.product-line-stock-msg-out,
+	.product-line-stock-msg-low {
+		margin-top: 0;
+		margin-bottom: 0;
+		width: 100%;
+		text-align: left;
+		padding: $sc-base-padding;
+
+		@media (min-width: $screen-md-min) {
+			width: auto;
+		}
+	}
+
+}
+
+.facets-item-cell-list-details {
+	text-align:center;
+}
+
+.facets-item-cell-list-image {
+	width:100%;
+	height:auto;
+}
+
+.facets-item-cell-list-sku {
+	color: $sc-color-maddocks-blue;
+	font-size: $sc-base-font-size-maddocks;
+	font-family: $sc-maddocks-font-futura;
+}
+
+.facets-item-cell-list-title {
+	@extend .item-cell-title;
+	text-align:left;
+}
+
+.facets-item-cell-list-price {
+	@extend .small-price;
+	margin-bottom:$sc-small-margin;
+}
+
+.facets-item-cell-list-rating {
+	text-align:center;
+	display: inline-block;
+}
+
+
+.facets-item-cell-list {
+	.global-views-star-rating-area {
+		margin-bottom:$sc-small-margin;
+	}
+}
+
+.facets-item-cell-list-new-item-tag {
+	@extend .new-item-tag;
+	font-size:$sc-smallest-font-size-maddocks;
+}
+
+.facets-item-cell-list-clearance-item-tag {
+	@extend .clearance-item-tag;
+	font-size:$sc-smallest-font-size-maddocks;
+}
+
+.facets-item-cell-list-offer-item-tag {
+	@extend .offer-item-tag;
+	font-size:$sc-smallest-font-size-maddocks;
+}
+
+.facets-item-cell-list-clearance-qty {
+	background: $sc-color-info-background;
+	color: $sc-color-info;
+	padding: $sc-base-padding * 2;
+	font-size: $sc-small-font-size-maddocks;
+	border: 1px solid $sc-color-info-border;
+}
+
+.not-available {
+	background: $sc-color-error-background;
+}
+
+.discontinued-item {
+	height: auto;
+		
+	@media (min-width: $screen-md-min) {
+		height: 134px;
+	}
+}

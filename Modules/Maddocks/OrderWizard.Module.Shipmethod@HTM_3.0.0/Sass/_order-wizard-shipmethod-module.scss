@@ -1,0 +1,74 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-shipmethod-module{
+	@extend .box-column;
+	background: $sc-color-maddocks-light-blue;
+}
+
+.order-wizard-shipmethod-module-title{
+	margin-bottom: $sc-medium-margin;
+}
+
+.order-wizard-shipmethod-module-message{
+	@extend .message-info;
+}
+
+.order-wizard-shipmethod-module-option-select{
+	@extend .input-large;
+}
+
+.order-wizard-shipmethod-module-option{
+	color: $sc-color-maddocks-blue;
+	display: block;
+	padding: $sc-base-padding * 5;
+	margin-bottom: $sc-base-margin * 2;
+	background-color: $sc-color-maddocks-bluelink;
+	cursor: pointer;
+}
+
+.order-wizard-shipmethod-module-option-active{
+	background-color: $sc-color-tertiary;
+}
+
+
+.order-wizard-shipmethod-module-checkbox{
+	margin-right: $sc-base-margin * 2;
+}
+
+.order-wizard-shipmethod-module-option-price{
+	float: right;
+	color:$sc-color-maddocks-red;
+	font-size: $sc-medium-font-size-maddocks;
+}
+
+.order-wizard-msr-shipmethod-module-message{
+	@extend .message-warning;
+}
+
+.order-wizard-msr-shipmethod-package-message-icon{
+	@extend .icon-base;
+	@extend %fa-exclamation-triangle;
+}
+
+.order-wizard-shipmethod-module-option-name{}
+
+.order-wizard-shipmethod-module-label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: $sc-base-margin;
+	margin-top: $sc-base-margin;
+	color: $sc-color-maddocks-blue;
+}
+
+.order-wizard-shipmethod-module-input {
+	display: block;
+	border: 1px solid $sc-color-theme-light;
+	font-size: $sc-base-font-size;
+	padding: $sc-base-padding * 2;
+	width: 100%;
+}

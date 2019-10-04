@@ -1,0 +1,433 @@
+{
+    "type": "object",
+
+    "properties": {
+
+        "navigationData": {
+            "group": "layout",
+            "type": "array",
+            "title": "Navigation",
+            "docRef": "bridgehead_4393094608",
+            "description": "Settings for the main navigation links like Home, Shop, etc. <br/>Links used to construct navigation. (maxi menu and sidebar) - by default the 'Home' and 'Shop' links. ",
+
+            "items": {
+                "type": "object",
+                "properties": {
+
+                    "text": {
+                        "type": "string",
+                        "title": "Text",
+                        "translate": true,
+                        "description": "Link's text shown in the UI",
+                        "mandatory": true
+                    },
+                    "href": {
+                        "type": "string",
+                        "title": "href",
+                        "description": "The href of the link - for example '/search' will go to the search results page. It's ignored for parent entries.  Also it could be an absolute URL like https://google.com but in that case, make sure you really need to break the single page application. "
+                    },
+                    "level": {
+                        "type": "string",
+                        "title": "level",
+                        "description": "Hierarchy level of this navigation entry",
+                        "enum": ["1", "2", "3"],
+                        "mandatory": true
+                    },
+                    "dataTouchpoint": {
+                        "type": "string",
+                        "title": "data-touchpoint",
+                        "description": "data-touchpoint value for the link if any",
+                        "enum": ["home", "login", "register", "logout", "customercenter", "viewcart", "checkout", ""]
+                    },
+                    "dataHashtag": {
+                        "type": "string",
+                        "title": "data-hashtag",
+                        "description": "data-hashtag value for the link if any"
+                    },
+                    "classnames": {
+                        "type": "string",
+                        "title": "class names",
+                        "description": "extra HTML class names to add to this entry"
+                    },
+                    "id": {
+                        "type": "string",
+                        "title": "Id",
+                        "description": "Parent entries must have an id so children entries can reference it"
+                    },
+                    "parentId": {
+                        "type": "string",
+                        "title": "Parent Id",
+                        "description": "If this is a child entry then this must be the id of the parent entry."
+                    },
+                    "placeholder": {
+                        "type": "string",
+                        "title": "Placeholder",
+                        "description": "Placeholder===Cateogries will be used to render the category menu at that place. "
+                    },
+                    "requireslogin": {
+                        "type": "boolean",
+                        "title": "Requires Login",
+                        "description": "This menu item will only be shown when a customer is logged in. ",
+                        "default":false
+                    }
+                }
+            },
+            "default": [{
+                "text": "Home",
+                "href": "/",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/",
+                "level": "1",
+                "classnames": "header-menu-home-anchor"
+            }, {
+                "id": "about",
+                "text": "About Maddocks",
+                "href": "/about",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/about",
+                "level": "1",
+                "classnames": "header-menu-home-anchor"
+            }, {
+            "id":"company",
+                "text": "Our Company",
+                "href": "/products-services",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/products-services",
+                "level": "1",
+                "classnames": "header-menu-home-anchor"
+            }, {
+                "text": "Case Studies",
+                "href": "/case-studies",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/case-studies",
+                "level": "1",
+                "classnames": "header-menu-home-anchor"
+            }, {
+            "id":"contactus",
+                "text": "Contact Us",
+                "href": "/contact-us",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/contact-us",
+                "level": "1",
+                "classnames": "header-menu-home-anchor"
+            }, {
+                "text": "Latest News",
+                "href": "/latest-news",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/latest-news",
+                "level": "1",
+                "classnames": "header-menu-home-anchor"
+            }, {
+            "id":"products",
+                "text": "Product Range",
+                "href": "/Products",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/Products",
+                "level": "1",
+                "classnames": "header-menu-shop-anchor",
+                "requireslogin":true
+            }, {
+                "parentId": "about",
+                "text": "Overview of Maddocks",
+                "href": "/overview",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/overview",
+                "level": "2",
+                "classnames": ""
+            }, {
+                "parentId": "about",
+                "text": "History of Maddocks",
+                "href": "/history",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/history",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "about",
+                "text": "Corporate Brochure",
+                "href": "/corporate-brochure",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/corporate-brochure",
+                "level": "2",
+                "classnames": ""
+            }, {
+                "parentId": "about",
+                "text": "Maddocks in Numbers",
+                "href": "/maddocks-in-numbers",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/maddocks-in-numbers",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "about",
+                "text": "Testimonials",
+                "href": "/testimonials",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/testimonials",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "company",
+                "text": "Products & Services",
+                "href": "/products-services",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/products-services",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "company",
+                "text": "Brands",
+                "href": "/brands",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/brands",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "company",
+                "text": "Support",
+                "href": "/support",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/support",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "company",
+                "text": "Distribution",
+                "href": "/distribution",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/distribution",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "company",
+                "text": "International",
+                "href": "/international",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/international",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "company",
+                "text": "Supply Chain",
+                "href": "/supply-chain",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/supply-chain",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "company",
+                "text": "Repair if you Care",
+                "href": "/repair-if-you-care",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/repair-if-you-care",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "company",
+                "text": "Maddocks UK Tradesite",
+                "href": "/maddocks-uk-tradesite",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/maddocks-uk-tradesite",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "company",
+                "text": "Europart UK Tradesite",
+                "href": "/europart-uk-tradesite",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/europart-uk-tradesite",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "company",
+                "text": "Europart Distribution Limited",
+                "href": "/europart-distribution-limited",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/europart-distribution-limited",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "contactus",
+                "text": "Contact Us",
+                "href": "/contact-us",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/contact-us",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "contactus",
+                "text": "FAQs",
+                "href": "/faqs",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/faqs",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "contactus",
+                "text": "Vacancies",
+                "href": "/vacancies",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/vacancies",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "New Product Lines",
+                "href": "/productrange/New-Product-Lines",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/New-Product-Lines",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Special Offers & Promotions",
+                "href": "/productrange/Special-Offers--AND--Promotions",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Special-Offers--AND--Promotions",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Cleaning & Consumables",
+                "href": "/productrange/Cleaning--AND--Consumables",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Cleaning--AND--Consumables",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Commercial Motors & Pumps",
+                "href": "/productrange/Commercial-Motors--AND--Pumps",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Commercial-Motors--AND--Pumps",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Cooker & Cooker Hood Parts",
+                "href": "/productrange/Cooker--AND--Cooker-Hood-Parts",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Cooker--AND--Cooker-Hood-Parts",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Cookware & Barbecue",
+                "href": "/productrange/Cookware--AND--Barbecue",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Cookware--AND--Barbecue",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Finished Goods",
+                "href": "/productrange/Finished-Goods",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Finished-Goods",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Home Laundry & Dishwasher Parts",
+                "href": "/productrange/Home-Laundry--AND--Dishwasher-Parts",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Home-Laundry--AND--Dishwasher-Parts",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Janitorial Service Accessories",
+                "href": "/productrange/Janitorial-Service-Accessories",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Janitorial-Service-Accessories",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Lawn & Garden Parts",
+                "href": "/productrange/Lawn--AND--Garden-Parts",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Lawn--AND--Garden-Parts",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Refrigeration",
+                "href": "/productrange/Refrigeration",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Refrigeration",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Service Equipment & Terminals",
+                "href": "/productrange/Service-Equipment--AND--Terminals",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Service-Equipment--AND--Terminals",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Small Appliance Parts",
+                "href": "/productrange/Small-Appliance-Parts",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Small-Appliance-Parts",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Stationary & Office Materials",
+                "href": "/productrange/Stationary--AND--Office-Materials",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Stationary-Office-Materials",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Vacuum Cleaner Parts",
+                "href": "/productrange/Vacuum-Cleaner-Parts",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Vacuum-Cleaner-Parts",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Catalogues & Offer Brochures",
+                "href": "/productrange/Catalogues--AND--Offer-Brochures",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Catalogues-Offer-Brochures",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Cooker Cleaner Products",
+                "href": "/productrange/Cooker-Cleaner-Products",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Cooker-Cleaner-Products",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Europart UK Retail Packed Range",
+                "href": "/productrange/Europart-UK-Retail-Packed-Range",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Europart-UK-Retail-Packed-Range",
+                "level": "2",
+                "classnames": ""
+            },{
+                "parentId": "products",
+                "text": "Installation Parts",
+                "href": "/productrange/Installation Parts",
+                "dataTouchpoint": "home",
+                "dataHashtag": "#/productrange/Installation Parts",
+                "level": "2",
+                "classnames": ""
+            }, {
+                "text": "Categories placeholder",
+                "level": "1",
+                "placeholder": "Categories"
+            }]
+        }
+
+    }
+}

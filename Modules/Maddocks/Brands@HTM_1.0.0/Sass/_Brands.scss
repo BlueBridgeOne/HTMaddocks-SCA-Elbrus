@@ -1,0 +1,100 @@
+/*BB1 G Truslove July 2017*/
+.brands-button{
+	margin-bottom: $sc-base-margin * 2;
+	padding:$sc-base-padding;
+}
+
+.brands-promote{
+	width:100%;
+	padding:$sc-base-padding;
+	border:1px solid $sc-color-theme-light;
+	display:block;
+	text-align:center;
+}
+
+.brands-promote-button{
+	width:100%;
+	margin:0;
+	padding:0;
+	border:0;
+	display:block;
+	text-align:center;
+}
+
+.brands-promote-height{
+	//height:80px!important;
+}
+
+.brands-category-button{
+	@extend .button-medium;
+	@extend .button-secondary;
+	width:100%;
+	margin-bottom: $sc-base-margin * 2;
+	padding-left: $sc-base-padding;
+	padding-right: $sc-base-padding;
+}
+
+.brands-image{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	display: inline-block;
+}
+
+.brands-text{
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	font-family: $sc-maddocks-font-arial;
+}
+
+.brands-text-table{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	table-layout: fixed;
+}
+
+.brands-yellow{
+	color: $sc-color-maddocks-yellow;
+	font-weight: $sc-font-weight-bold;
+}
+
+.brands-promote-col{
+	@extend .col-lg-1;
+	@extend .col-md-1;
+	@extend .col-sm-3;
+	@extend .col-xs-3;
+	margin-bottom: $sc-base-margin;
+}
+
+.brands-col{
+	@extend .col-lg-1;
+	@extend .col-md-1;
+	@extend .col-sm-4;
+	@extend .col-xs-4;
+}
+
+.brands-divider {
+	@extend .col-sm-12;
+	height: 1px;
+	background: $sc-color-theme-background;
+	margin-bottom: $sc-base-margin * 2;
+	margin-top: $sc-base-margin * 2;
+}
+
+.brand-category-container {
+	margin-top: $sc-base-margin * 2;
+}
+
+.brand-category {
+	@extend .col-lg-1;
+	@extend .col-md-2;
+	@extend .col-sm-2;
+	@extend .col-xs-3;
+}

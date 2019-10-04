@@ -1,0 +1,13 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ],
+        "templates": [
+            "Templates/*"
+        ]
+    },
+    "overrides": {
+        "Maddocks/Cart@HTM_4.0.0/Templates/cart_summary.tpl": "Templates/cart_summary.tpl"
+    }
+}

@@ -1,0 +1,34 @@
+.product-specification {
+	@extend .col-xs-12;
+    width:100%;
+    background: $sc-color-quantity-value;
+    padding: $sc-base-padding * 2;
+    margin-bottom: $sc-base-margin * 2;
+}
+
+.product-specification-title {
+	color: $sc-color-maddocks-blue;
+}
+
+.product-specification-line {
+	float: left;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 1.4;
+    font-size: $sc-small-font-size-maddocks;
+    display:inline;
+
+    @media (min-width: $screen-md-min) {
+    	width: 50%;
+    }
+}
+
+.product-specification-line-label {
+	font-weight:bold;
+	color: #444444;
+}
+
+.product-specification-line-value {
+	font-family: $sc-maddocks-font-arial;
+	color: #444444;
+}

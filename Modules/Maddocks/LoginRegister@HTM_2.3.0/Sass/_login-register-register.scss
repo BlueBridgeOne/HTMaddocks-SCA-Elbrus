@@ -1,0 +1,80 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.login-register-register-form-description{
+	margin-top: $sc-medium-margin;
+	margin-bottom: $sc-medium-margin;
+	font-family: $sc-maddocks-font-arial;
+	@extend .col-xs-12;
+}
+
+.login-register-register-form-controls-group{
+	margin-top: $sc-base-margin * 2;
+	@extend .col-sm-6;
+}
+
+.login-register-register-form-controls-group-company{
+	margin-top: $sc-base-margin * 2;
+	@extend .col-sm-12;
+}
+
+.login-register-register-form-controls{
+}
+
+.login-register-register-form-label, 
+.global-views-states-group-label,
+.global-views-countriesDropdown-group-label {
+	//@extend .input-label;
+	color: $sc-color-maddocks-blue;
+	font-size: $sc-small-font-size-maddocks;
+	margin-bottom: 0px;
+}
+
+.login-register-register-form-required{
+	@extend .input-required;
+}
+
+.login-register-register-form-input{
+	@extend .input-large;
+	width:100%;
+}
+
+.login-register-register-form-submit{
+	@extend .button-large;
+	@extend .button-primary;
+}
+
+.login-register-register-form-messages{
+	@extend .form-messages;
+}
+
+.login-register-register-form-optional,
+.global-views-states-optional-label {
+	font-size:$sc-smallest-font-size-maddocks;
+	color: $sc-color-maddocks-red;
+}
+
+.login-register-register-form-help-block{
+}
+
+.login-register-register-form{
+}
+
+.login-register-register-required{
+}
+
+.login-register-register-form-email-subscribe {
+	@extend .col-xs-12;
+	margin-top: $sc-base-margin * 2;
+	margin-bottom: $sc-base-margin * 2;
+}
+
+.global-views-countriesDropdown-select,
+.global-views-states-group-input,
+.global-views-states-group-select {
+	width: 100%;
+}

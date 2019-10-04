@@ -1,0 +1,30 @@
+<%/*
+	BB1 G Truslove Aug 2017
+
+	Redirect via ssp after login.
+*/%>
+
+<%
+	var session = require('SC.Models.Init').session;
+	var url_fragment = request.getAllParameters() && request.getAllParameters().redirect;
+	
+	var home = session.getSiteSettings(['touchpoints']).touchpoints.home;
+	if(url_fragment){
+	if(url_fragment.charAt(url_fragment.length-1)=="/"){
+	url_fragment=url_fragment.substring(0,url_fragment.length-1);
+	}
+	if(home.indexOf("?")==-1){
+	home+="/"+encodeURIComponent(url_fragment||"");
+	}else{
+	home=home.replace("?","/"+encodeURIComponent(url_fragment||"")+"?");
+}
+	if(home.indexOf("%3F")>-1){
+	home=home.split("?").join("&");	
+	home=home.split("%3F").join("?");	
+	home=home.split("%3D").join("=");
+	}
+		}
+		home=home.replace("#login-register","");
+	return nlapiSetRedirectURL('EXTERNAL',home);
+%>
+<%=home%> <%=url_fragment%>

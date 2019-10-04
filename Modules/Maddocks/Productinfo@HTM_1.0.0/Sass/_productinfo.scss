@@ -1,0 +1,53 @@
+.product-info-container {
+
+}
+
+.product-info-title {
+	font-size: $sc-h4-font-size;
+	color: $sc-color-maddocks-blue;
+	font-family: $sc-maddocks-font-futura;
+}
+
+.product-info-description, .product-info-description p {
+	font-size: $sc-small-font-size-maddocks;
+	margin-bottom: $sc-base-margin * 3;
+	font-family: $sc-maddocks-font-arial;
+}
+
+.product-details-information-tab-content {
+    padding: $sc-base-padding * 2  $sc-base-padding * 2;
+}
+
+.product-reviews-center-container {
+    padding: 0px 0;
+}
+
+.degrees {
+	font-family: $sc-maddocks-font-arial;
+}
+
+.product-specification-line {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 5%;
+    padding: 6px 0;
+    line-height: 25px;
+    font-size:13px;
+    display:block;
+    
+    @media(min-width: $screen-md-min){
+    	display:inline;
+    	float: left;
+    	width: 50%;
+    }
+}
+
+.product-specification-line-label {
+	font-weight:bold;
+	color: #444444;
+}
+
+.product-specification-line-value {
+	font-family:helvetica;
+	color: #444444;
+}

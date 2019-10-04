@@ -1,0 +1,31 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"styles.css",
+				"*.min.js",
+				"payload.json",
+				"*.tpl.js",
+				"Macros.js",
+				"*.map",
+				"gulpfile.js",
+"Modules/BB1/distro.json"
+			],
+			"folder_exclude_patterns":
+			[
+				"Backups",
+				"node_modules",
+				"processed-macros/raw",
+				"LocalDistribution/sass",
+				"DeployDistribution",
+				"Modules/third_parties",
+				"ns_npm_repository",
+				"gulp",
+				"LocalDistribution"
+			],
+			"path": "."
+		}
+	]
+}

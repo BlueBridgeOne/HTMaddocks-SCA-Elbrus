@@ -1,0 +1,60 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+.overview-profile {
+    background-color: $sc-color-maddocks-dashboard-green;
+}
+
+.overview-profile-header {
+    display: inline-block;
+    color: $sc-color-maddocks-bluelink;
+    padding: $sc-base-padding;
+    font-size: $sc-h3-font-size;
+}
+.overview-profile-card {
+    padding: $sc-base-padding;
+    background-color: $sc-color-maddocks-dashboard-green;
+    color: $sc-color-maddocks-bluelink;
+}
+.overview-profile-card-content {
+	font-family: $sc-maddocks-font-arial;
+
+	@media (min-width: $screen-sm-min) {
+		min-height: 200px;
+    	overflow: auto;
+	}
+}
+.overview-profile-card-button-edit {
+    margin-top: $sc-base-margin * 3;
+    padding: $sc-base-padding * 2 $sc-base-padding * 3;
+    text-align: center;
+    line-height: 1;
+    color: $sc-color-maddocks-dashboard-green;
+    background: $sc-color-maddocks-bluelink;
+    display: inline-block;
+    width:100%;
+    border: 1px solid $sc-color-maddocks-dashboard-green;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+
+    &:hover {
+    	background: $sc-color-maddocks-blue;
+    	color: $sc-color-maddocks-bluelink;
+    }
+}
+.overview-profile-company, .overview-profile-name-title {
+	font-weight: $sc-font-weight-bold;
+	color: $sc-color-maddocks-bluelink;
+	font-family: $sc-maddocks-font-futura;
+}
+
+.overview-profile-email{
+	color: $sc-color-maddocks-bluelink;
+}
+.overview-profile-phone{
+	color: $sc-color-maddocks-bluelink;
+}

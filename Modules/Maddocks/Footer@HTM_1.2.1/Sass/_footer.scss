@@ -1,0 +1,131 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+
+    BB1 G Truslove Jun 2017
+*/
+
+footer {
+    background: $sc-color-maddocks-blue;
+    //border-top: 1px solid $sc-color-theme-border;
+    border-bottom: 5px solid $sc-color-maddocks-yellow;
+}
+.bluetext{color:white; font-family:Arial;}
+.bluelink{color:white; font-family:Arial;}
+.footer-content{
+    @extend .container;
+    @extend .row;
+    margin: auto;
+}
+.footer-content-nav {
+    @extend .col-md-8;
+    @extend .col-xs-12;
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer-content-nav-list {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: $sc-base-padding * 6 0 0;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: $sc-base-padding * 5;
+    }
+
+    @media (min-width: $screen-md-min) {
+        text-align: left;
+    }
+}
+.footer-content-nav-list > li {
+    display: inline-block;
+    margin-right: $sc-base-margin * 2;    font-weight: 300;
+}
+.footer-content-nav-list a{
+    color:white;
+}
+.footer-content-column p{
+    padding: $sc-base-padding * 1 0;
+    line-height:1.2;
+}
+.footer-content-column {
+    @extend .col-lg-3;
+    @extend .col-md-4;
+    @extend .col-sm-6;
+    @extend .col-xs-12;
+    font-size: $sc-base-font-size;
+    color: white;
+    padding: $sc-base-padding * 3 0;
+}
+.footer-content-title{
+    color:$sc-color-maddocks-yellow;
+    //font-size: $sc-base-font-size*1.5;
+    font-size: 18px;
+    font-weight:300;
+}
+.footer-content-banner{
+    @extend .col-xs-12;
+    //color:$sc-color-maddocks-yellow;
+    color:white;
+    text-align:center;
+    //padding-top: $sc-base-padding * 4;
+    padding-top: $sc-base-padding * 2;
+    //padding-bottom: $sc-base-padding * 4;
+    padding-bottom: $sc-base-padding * 2;
+    //font-size: $sc-base-font-size*2;
+    font-size: 24px;
+}
+@media (max-width: $screen-md-min) {
+.footer-content-banner{
+        font-size: $sc-base-font-size*1.5;
+        adding-top: $sc-base-padding * 2;
+        adding-bottom: $sc-base-padding * 2;
+        }
+        .footer-content-title{
+        font-size: $sc-base-font-size*1.2;
+        }
+    }
+.footer-content-banner b{color:inherit;}
+.footer-content-company,.footer-content-payment{
+    @extend .col-xs-12;
+    color:$sc-color-maddocks-yellow;
+    text-align:center;
+    font-size: $sc-small-font-size-maddocks;
+    padding-bottom: 10px;
+}
+.footer-content-copyright {
+@extend .col-xs-12;
+color:white;
+text-align:center;
+    display: block;
+    float: none;
+    clear: both;
+    padding-bottom: $sc-base-padding * 4;
+}
+ .facebook-icon{
+  @extend .fa;
+  @extend .fa-fw;
+  @extend %fa-facebook;
+  color:$sc-color-maddocks-yellow;
+  font-size: $sc-base-font-size*2;
+  }
+  .twitter-icon{
+  @extend .fa;
+  @extend .fa-fw;
+  @extend %fa-twitter;
+  color:$sc-color-maddocks-yellow;
+  font-size: $sc-base-font-size*2;
+  }
+  .google-plus-icon{
+  @extend .fa;
+  @extend .fa-fw;
+  @extend %fa-google-plus;
+  color:$sc-color-maddocks-yellow;
+  font-size: $sc-base-font-size*2;
+  }
+
+  .footer-content-payment img {
+    margin-top: $sc-base-margin;
+  }

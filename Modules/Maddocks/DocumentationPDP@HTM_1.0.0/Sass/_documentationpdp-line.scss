@@ -1,0 +1,37 @@
+#doc-container {
+	display: table;
+	width: 100%;
+	margin-top: 15px;
+	border: 1px solid black !important;
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#doc-row  {
+	display: table-row;
+}
+
+#left {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 12.5%
+	}
+
+#right {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 12.5%
+} 
+
+#middle-left, #middle-right {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 37.5%
+}
+
+#doc-row-button {
+    box-shadow: 2px 2px 5px 0px #888888 !important;
+}

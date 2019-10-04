@@ -1,0 +1,38 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+
+	BB1 G Truslove June 2017
+*/
+
+.main, .layout-container {
+	min-height: 100%;
+	height: auto;
+	width: 100%;
+}
+
+%sc-layout {
+	min-height: 100%;
+}
+
+%sc-footer {
+}
+
+.layout-overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+.page-not-found,.cms-landing-page,.error-management-internal-error {
+	margin-bottom: $sc-base-margin * 8;
+}
+
+.cms-content-html h1,.cms-content h1{margin-bottom: $sc-base-margin * 2;}
+.cms-content-html h2,.cms-content h2{margin-bottom: $sc-base-margin * 2;margin-top: $sc-base-margin * 2;}
+.cms-content-html p,.cms-content p{margin-bottom: $sc-base-margin * 2;}

@@ -1,0 +1,71 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+.overview-shipping {
+  background-color: $sc-color-maddocks-dashboard-yellow;
+}
+
+.overview-shipping-header {
+    display: inline-block;
+    color: $sc-color-maddocks-bluelink;
+    padding: $sc-base-padding;
+    font-size: $sc-h3-font-size;
+}
+.overview-shipping-header h4 {
+  margin: $sc-base-margin * 2 0;
+}
+.overview-shipping-card {
+  padding: $sc-base-padding;
+  width: 100%;
+  background-color: $sc-color-maddocks-dashboard-yellow;
+}
+.overview-shipping-card .address-details {
+  border: 0;
+  padding: 0;
+  background-color: $sc-color-maddocks-dashboard-yellow;
+  color: $sc-color-maddocks-bluelink;
+
+  p {
+    color: $sc-color-maddocks-bluelink;
+    font-family: $sc-maddocks-font-arial;
+  }
+
+  b {
+    color: $sc-color-maddocks-bluelink;
+    font-size: $sc-base-font-size;
+    font-family: $sc-maddocks-font-futura;
+  }
+}
+
+.overview-shipping-card .address-details .address-details-phone {
+  font-weight: $sc-font-weight-bold;
+}
+
+.overview-shipping-card-content {
+	@media (min-width: $screen-sm-min) {
+		min-height: 200px;
+    overflow: auto;
+	}	
+}
+.overview-shipping-card-button-edit {
+    margin-top: $sc-base-margin * 3;
+    padding: $sc-base-padding * 2 $sc-base-padding * 3;
+    text-align: center;
+    line-height: 1;
+    color: $sc-color-maddocks-dashboard-yellow;
+    background: $sc-color-maddocks-bluelink;
+    display: inline-block;
+    width:100%;
+    border: 1px solid $sc-color-maddocks-dashboard-yellow;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+
+    &:hover {
+      background: $sc-color-maddocks-blue;
+      color: $sc-color-maddocks-bluelink;
+    }
+}

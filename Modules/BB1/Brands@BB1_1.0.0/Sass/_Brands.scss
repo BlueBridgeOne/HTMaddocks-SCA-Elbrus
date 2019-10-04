@@ -1,0 +1,32 @@
+/*BB1 G Truslove July 2017*/
+.brands-button{width:100%;
+margin-bottom:$sc-base-margin*2;
+padding:$sc-base-padding;
+}
+.brands-promote{width:100%;
+margin:$sc-base-margin;
+padding:$sc-base-padding;
+border:1px solid $sc-color-theme-light;
+display:block;
+text-align:center;
+}
+.brands-promote-button{width:100%;
+margin:0;
+padding:0;
+border:0;
+display:block;
+text-align:center;
+}
+.brands-promote-height{height:80px!important;}
+.brands-category-button{width:100%;
+margin-bottom:$sc-base-margin*2;
+padding-left:$sc-base-padding;
+padding-right:$sc-base-padding;
+}
+.brands-image{height:64px;padding:0;margin:0;border:0;display:inline-block;}
+.brands-text{height:64px;vertical-align:middle;padding:0;margin:0;border:0;text-align:center;overflow: hidden;
+text-overflow: ellipsis;width:100%;}
+.brands-text-table{width:100%;padding:0;margin:0;border:0;table-layout:fixed;}
+.brands-yellow{color:$sc-color-maddocks-yellow;}
+.brands-promote-col{padding-left:2px!important;padding-right:2px!important;}
+.brands-col{height:84px;}

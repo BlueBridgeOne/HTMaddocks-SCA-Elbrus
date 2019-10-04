@@ -1,0 +1,88 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "footer",
+        "title": "Footer",
+        "description": "Footer settings",
+        "docRef": "bridgehead_4393101142",
+        "group": "layout"
+    },
+    "properties": {
+        "footer.navigationLinks": {
+            "group": "layout",
+            "subtab": "footer",
+            "type": "array",
+            "title": "Footer navigation",
+            "description": "Footer navigation links that goes in the footer",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string",
+                        "title": "Text",
+                        "description": ""
+                    },
+                    "href": {
+                        "type": "string",
+                        "title": "URL",
+                        "description": ""
+                    },
+                    "placement": {
+                        "type": "string",
+                        "title": "Placement",
+                        "enum": ["Help & Info", "Customer Support"],
+                        "description": "Position the link in the footer.",
+                        "default": "Help & Info"
+                    },
+                    "requireslogin": {
+                        "type": "boolean",
+                        "title": "Requires Login",
+                        "description": "This link will only be shown when a customer is logged in. ",
+                        "default":false
+                    }
+                }
+            },
+            "default": [{
+                "text": "Cookie Policy",
+                "href": "/cookie-policy",
+                "placement": "Help & Info"
+            }, {
+                "text": "Shipping & Handling",
+                "href": "/delivery",
+                "placement": "Help & Info"
+            }, {
+                "text": "Returns Policy",
+                "href": "/returns-policy",
+                "placement": "Help & Info"
+            }, {
+                "text": "Terms & Conditions",
+                "href": "/terms-conditions",
+                "placement": "Help & Info"
+            }, {
+                "text": "Terms of Website Use",
+                "href": "/terms-of-website-use",
+                "placement": "Help & Info"
+            }, {
+                "text": "Website Acceptable Use Policy",
+                "href": "/website-acceptable-use-policy",
+                "placement": "Help & Info"
+            }, {
+                "text": "FAQs",
+                "href": "/faqs",
+                "placement": "Customer Support"
+            }, {
+                "text": "Video Tutorials",
+                "href": "/video-tutorials",
+                "placement": "Customer Support"
+            }, {
+                "text": "Browser Requirements",
+                "href": "/browser-requirements",
+                "placement": "Customer Support"
+            }, {
+                "text": "Contact Us",
+                "href": "/contact-us",
+                "placement": "Customer Support"
+            }]
+        }
+    }
+}

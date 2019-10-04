@@ -1,0 +1,91 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.quantity-pricing {
+	margin-top: $sc-small-margin;
+	margin-bottom: $sc-small-margin;
+	@extend .clearfix;
+}
+.quantity-pricing-hidden {
+	@extend .hidden
+}
+.quantity-pricing-container {
+	position: relative;
+}
+.quantity-pricing-expander-head {
+}
+.quantity-pricing-expander-head-toggle  {
+}
+.quantity-pricing-flyout-head-toggle {
+}
+.quantity-pricing-expander-toggle-icon {
+	@extend .fa;
+	@extend %fa-angle-up;
+	font-size:$sc-h2-font-size;
+	@include transition (transform $sc-animation-base-duration ease);
+	vertical-align: middle;
+}
+.quantity-pricing-flyout-toggle-icon {
+	@extend .fa;
+	@extend %fa-angle-down;
+	font-size:$sc-h2-font-size;
+	@include transition (transform $sc-animation-base-duration ease);
+	vertical-align: middle;
+}
+.open .quantity-pricing-flyout-toggle-icon,
+.collapsed .quantity-pricing-expander-toggle-icon{
+	@include rotate(180deg); 
+}
+.quantity-pricing-expander-body {
+	border:1px solid $sc-color-theme-background;
+	box-shadow:0px 3px 0px $sc-color-theme-background;
+	-moz-box-shadow:0px 3px 0px $sc-color-theme-background;
+	-webkit-box-shadow:0px 3px 0px $sc-color-theme-background;
+	margin-top: $sc-base-margin;
+	background: #FFF;
+}
+.quantity-pricing-expander-body-container {
+	table {
+		width: 100%;
+	}	
+}
+.quantity-pricing-table-header-quantity,
+.quantity-pricing-table-header-price,
+.quantity-pricing-table-body-quantity,
+.quantity-pricing-table-body-price {
+	padding: $sc-base-padding;
+}
+.quantity-pricing-table-header-price,
+.quantity-pricing-table-body-price  {
+	text-align: right
+}
+.quantity-pricing-flyout-content {
+	@extend .sc-flyout-content;
+	left: auto;
+	right: 0;
+	width: 100%;
+}
+
+.quantity-pricing-expander-body-container thead{
+	background: $sc-color-maddocks-blue;
+}
+
+.quantity-pricing-expander-body-container th{
+	color: #FFF;
+	font-size: $sc-small-font-size-maddocks;
+}
+
+.quantity-pricing-expander-body-container tbody{
+	background-color: $sc-color-maddocks-light-blue;
+    background: linear-gradient($sc-color-maddocks-light-blue, #FFF, $sc-color-maddocks-light-blue);
+    background: -webkit-linear-gradient($sc-color-maddocks-light-blue, #FFF, $sc-color-maddocks-light-blue);
+    background: -o-linear-gradient($sc-color-maddocks-light-blue, #FFF, $sc-color-maddocks-light-blue);
+    background: -moz-linear-gradient($sc-color-maddocks-light-blue, #FFF, $sc-color-maddocks-light-blue);
+    border-bottom: 1px solid #002878;
+    color: $sc-color-maddocks-blue;
+    font-size: $sc-small-font-size-maddocks;
+}

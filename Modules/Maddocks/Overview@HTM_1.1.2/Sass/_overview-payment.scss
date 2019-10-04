@@ -1,0 +1,60 @@
+/*
+	© 2017 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+.overview-payment {
+	background-color: $sc-color-maddocks-dashboard-red;
+}
+
+.overview-payment-header {
+    display: inline-block;
+    color: $sc-color-maddocks-bluelink;
+    padding: $sc-base-padding;
+    font-size: $sc-h3-font-size;
+}
+.overview-payment-card {
+   	padding: $sc-base-padding;
+    background-color: $sc-color-maddocks-dashboard-red;
+}
+.overview-payment-card .creditcard {
+	margin: 0;
+	color: $sc-color-maddocks-bluelink;
+
+	.creditcard-content {
+		padding: 0;
+		border: 0;
+	}
+}
+.overview-payment-card-content {
+	font-family: $sc-maddocks-font-arial;
+
+	@media (min-width: $screen-sm-min) {
+		min-height: 200px;
+    	overflow: auto;
+	}
+}
+
+.overview-payment-card-content p {
+	color: $sc-color-maddocks-bluelink;
+}
+.overview-payment-card-button-edit {
+    margin-top: $sc-base-margin * 3;
+    padding: $sc-base-padding * 2 $sc-base-padding * 3;
+    text-align: center;
+    line-height: 1;
+    color: $sc-color-maddocks-dashboard-red;
+    background: $sc-color-maddocks-bluelink;
+    display: inline-block;
+    width:100%;
+    border: 1px solid $sc-color-maddocks-dashboard-red;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+
+    &:hover {
+    	background: $sc-color-maddocks-blue;
+    	color: $sc-color-maddocks-bluelink;
+    }
+}

@@ -1,0 +1,47 @@
+.substitutes {
+   width: 100%;
+
+   @media(min-width: $screen-sm-min){
+		width: 250px;
+	}
+}
+
+.substitutes-expander-head {
+	font-size: $sc-small-font-size-maddocks;
+	text-transform: inherit;
+}
+.substitutes-expander-head-toggle {
+	display: block;
+	cursor:pointer;
+	height: 100%;
+	line-height: 37px;
+	padding: 0 $sc-base-padding * 2;
+    color: $sc-color-success;
+    background-color: $sc-color-success-background;
+}
+.substitutes-expander-toggle-icon {
+	@extend .acordion-head-toggle-icon;
+	height: 37px;
+	line-height: 34px;
+}
+.substitutes-expander-body {
+	@extend .accordion-body;
+	margin-bottom: $sc-base-margin * 2;
+	&.in { 
+		overflow: visible;
+	}
+}
+.substitutes-expander-container {
+	@extend .accordion-container;
+	margin: 0;
+    padding: 5px 0px 2px 0px;
+
+	.quick-add-box {
+		margin: 0;
+	}
+}
+
+.substitutes-table td {
+	vertical-align: middle;
+	font-size: $sc-small-font-size-maddocks;
+}

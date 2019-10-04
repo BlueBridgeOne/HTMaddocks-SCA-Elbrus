@@ -1,0 +1,84 @@
+.appliance-error-codes-container {
+	margin-top: $sc-base-margin * 4;
+
+	table {
+		width: 100%;
+	}
+	thead {
+		background: $sc-color-maddocks-blue;
+	}
+
+	th {
+		color: #FFF;
+		padding: $sc-base-padding;
+		font-size: $sc-smallest-font-size-maddocks;
+
+		@media (min-width: $screen-md-min) {
+			font-size: $sc-small-font-size;
+		}
+	}
+
+	td {
+		padding: $sc-base-padding;
+	}
+}
+
+.appliance-error-codes-information {
+	font-family: $sc-maddocks-font-arial;
+	font-size: $sc-base-font-size-maddocks;
+	margin-bottom: $sc-base-margin * 3;
+}
+
+.appliance-error-codes-tbody {
+	font-family: $sc-maddocks-font-arial;
+	font-size: $sc-small-font-size;
+
+	tr {
+		border-bottom: 1px solid $sc-color-theme-background;
+	}
+
+	tr:hover{
+		background: $sc-color-theme-background;
+	}
+
+	.bold-label {
+		font-weight: $sc-font-weight-bold;
+		color: $sc-color-maddocks-blue;
+	}
+}
+
+.appliance-error-codes-error {
+	font-size: $sc-h1-font-size;
+	font-weight: $sc-font-weight-bold;
+	color: $sc-color-maddocks-red;
+	width: 15%;
+}
+
+.appliance-error-codes-search-form-input,
+.appliance-error-codes-search-form-select {
+	@extend .input-large;
+	width:100%;
+}
+
+.appliance-error-codes-search-form {
+	@extend .col-md-5;
+	padding-left: 0px;
+    padding-right: 0px;
+}
+
+.appliance-error-codes-search-form-divider {
+	@extend .col-md-2;
+	font-family: $sc-maddocks-font-arial;
+	font-size: $sc-medium-font-size-maddocks;
+	padding: $sc-base-padding + 7;
+	color: $sc-color-maddocks-blue;
+	text-align: center;
+}
+
+.appliance-error-codes-description {
+	width: 50%;
+
+	p {
+		font-size: $sc-small-font-size;
+	}
+}
